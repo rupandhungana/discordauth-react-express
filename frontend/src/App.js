@@ -3,6 +3,7 @@ import axios from "axios";
 import { Link } from 'react-router-dom';
 import { Route, Routes } from 'react-router-dom';
 import { DiscordContext } from './context/DiscordContext';
+import Home from './pages/Home';
 
 const App = () => {
   const [session, setSession] = useState(null);
@@ -21,7 +22,7 @@ const App = () => {
   return (
     <DiscordContext.Provider value={{ session }}>
       <Routes>
-        <Route path='/' element={<Pfps />} />
+        <Route path='/' element={<Home />} />
       </Routes>
     </DiscordContext.Provider>
   )
