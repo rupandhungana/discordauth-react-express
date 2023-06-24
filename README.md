@@ -5,7 +5,7 @@
 ```mermaid
 graph LR
 A[Discord Api]  --> B((Express))
-A --> C(Frontend)
+B --> C(Frontend)
 B --> D{What you will see}
 C --> D
 ```
