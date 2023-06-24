@@ -6,5 +6,5 @@
 graph LR
 A[Discord Api]  --> B((Express))
 B --> C(Frontend)
-C --> D
+C --> D{What you will see}
 ```
