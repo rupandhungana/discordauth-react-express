@@ -84,7 +84,7 @@ app.get(`${PREFIX}/session`, (req, res) => {
 app.get(
     `${PREFIX}/callback`,
     passport.authenticate("discord", {
-        failureRedirect: "/error?code=999&message=Weencountered an error while connecting."
+        failureRedirect: "/"
     }),
     async (req, res) => {
         res.redirect(process.env.WEB);
