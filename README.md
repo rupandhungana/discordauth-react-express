@@ -1,6 +1,6 @@
 # Discord Auth with express and React
 
-> settin up
+> setting up
 
 - open backend/.env add add following data.
 
